@@ -136,13 +136,15 @@ PRODUCT_COPY_FILES += \
     vendor/aost/prebuilts/fonts/GoogleSans-Bold.ttf:system/fonts/GoogleSans-Bold.ttf \
     vendor/aost/prebuilts/fonts/GoogleSans-BoldItalic.ttf:system/fonts/GoogleSans-BoldItalic.ttf
 
-# Markup libs
+
 ifneq ($(filter arm64,$(TARGET_ARCH)),)
 PRODUCT_COPY_FILES += \
-	vendor/aost/prebuilts/lib/libsketchology_native.so:system/lib/libsketchology_native.so
+        vendor/aost/prebuilts/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
+        vendor/aost/prebuilts/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 else
 PRODUCT_COPY_FILES += \
-	vendor/aost/prebuilts/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
+        vendor/aost/prebuilts/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so \
+        vendor/aost/prebuilts/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
 endif
 
 # Include package overlays
