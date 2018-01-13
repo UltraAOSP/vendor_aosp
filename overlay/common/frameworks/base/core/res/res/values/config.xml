@@ -25,4 +25,7 @@
     <string name="config_headlineFontFamilyMedium">google-sans-medium</string>
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
+   <!-- Set icon mask to circle -->
+   <string name="config_icon_mask" translatable="false">"M50 0A50 50,0,1,1,50 100A50 50,0,1,1,50 0"</string>
+
 </resources>
