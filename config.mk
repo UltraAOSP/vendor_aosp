@@ -15,8 +15,6 @@
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
     SoundPickerPrebuilt \
-    WallpaperPickerGooglePrebuilt \
-    NexusLauncherPrebuilt \
     TimeZo \
     MarkupGoogle
 
