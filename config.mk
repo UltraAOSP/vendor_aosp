@@ -20,28 +20,28 @@ PRODUCT_PACKAGES += \
 
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),720)
-     PRODUCT_COPY_FILES += vendor/aost/media/bootanimation_720.zip:system/media/bootanimation.zip
+     PRODUCT_COPY_FILES += vendor/aost/prebuilts/media/bootanimation_720.zip:system/media/bootanimation.zip
 else ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
-     PRODUCT_COPY_FILES += vendor/aost/media/bootanimation_1080.zip:system/media/bootanimation.zip
+     PRODUCT_COPY_FILES += vendor/aost/prebuilts/media/bootanimation_1080.zip:system/media/bootanimation.zip
 else ifeq ($(TARGET_BOOT_ANIMATION_RES),1440)
-     PRODUCT_COPY_FILES += vendor/aost/media/bootanimation_1440.zip:system/media/bootanimation.zip
+     PRODUCT_COPY_FILES += vendor/aost/prebuilts/media/bootanimation_1440.zip:system/media/bootanimation.zip
 else
     $(error " TARGET_BOOT_ANIMATION_RES is undefined")
 endif
 
 # Fonts
 PRODUCT_COPY_FILES += \
-    vendor/aost/fonts/GoogleSans-Regular.ttf:system/fonts/GoogleSans-Regular.ttf \
-    vendor/aost/fonts/GoogleSans-Medium.ttf:system/fonts/GoogleSans-Medium.ttf \
-    vendor/aost/fonts/GoogleSans-MediumItalic.ttf:system/fonts/GoogleSans-MediumItalic.ttf \
-    vendor/aost/fonts/GoogleSans-Italic.ttf:system/fonts/GoogleSans-Italic.ttf \
-    vendor/aost/fonts/GoogleSans-Bold.ttf:system/fonts/GoogleSans-Bold.ttf \
-    vendor/aost/fonts/GoogleSans-BoldItalic.ttf:system/fonts/GoogleSans-BoldItalic.ttf
+    vendor/aost/prebuilts/fonts/GoogleSans-Regular.ttf:system/fonts/GoogleSans-Regular.ttf \
+    vendor/aost/prebuilts/fonts/GoogleSans-Medium.ttf:system/fonts/GoogleSans-Medium.ttf \
+    vendor/aost/prebuilts/fonts/GoogleSans-MediumItalic.ttf:system/fonts/GoogleSans-MediumItalic.ttf \
+    vendor/aost/prebuilts/fonts/GoogleSans-Italic.ttf:system/fonts/GoogleSans-Italic.ttf \
+    vendor/aost/prebuilts/fonts/GoogleSans-Bold.ttf:system/fonts/GoogleSans-Bold.ttf \
+    vendor/aost/prebuilts/fonts/GoogleSans-BoldItalic.ttf:system/fonts/GoogleSans-BoldItalic.ttf
 
 # Markup libs
 PRODUCT_COPY_FILES += \
-    vendor/aost/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
-    vendor/aost/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
+    vendor/aost/prebuilts/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
+    vendor/aost/prebuilts/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
 
 # Include package overlays
 DEVICE_PACKAGE_OVERLAYS += \
