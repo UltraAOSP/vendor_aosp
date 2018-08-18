@@ -45,7 +45,7 @@ PRODUCT_COPY_FILES += \
     vendor/aost/prebuilts/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 endif
 
-# Copy all Lineage-specific init rc files
+# Copy all specific init rc files
 #$(foreach f,$(wildcard vendor/aost/prebuilts/common/etc/init/*.rc),\
 #	$(eval PRODUCT_COPY_FILES += $(f):system/etc/init/$(notdir $f)))
 

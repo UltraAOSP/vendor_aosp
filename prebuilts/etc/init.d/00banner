@@ -1,0 +1,7 @@
+#!/system/bin/sh
+#
+# Print startup info
+#
+L="log -p i -t lineage"
+
+$L "Welcome to Android `getprop ro.build.version.release` / AOST-`getprop org.aost.version`";
