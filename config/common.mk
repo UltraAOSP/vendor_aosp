@@ -36,17 +36,17 @@ endif
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/aost/prebuilts/common/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/aost/prebuilts/common/bin/sysinit:system/bin/sysinit
+    vendor/aost/prebuilts/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/aost/prebuilts/bin/sysinit:system/bin/sysinit
 
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # userinit support
 PRODUCT_COPY_FILES += \
-    vendor/aost/prebuilts/common/etc/init.d/90userinit:system/etc/init.d/90userinit
+    vendor/aost/prebuilts/etc/init.d/90userinit:system/etc/init.d/90userinit
 endif
 
 # Copy all specific init rc files
-#$(foreach f,$(wildcard vendor/aost/prebuilts/common/etc/init/*.rc),\
+#$(foreach f,$(wildcard vendor/aost/prebuilts/etc/init/*.rc),\
 #	$(eval PRODUCT_COPY_FILES += $(f):system/etc/init/$(notdir $f)))
 
 # Extra tools
