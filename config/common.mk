@@ -45,6 +45,15 @@ PRODUCT_COPY_FILES += \
     vendor/aost/prebuilts/etc/init.d/90userinit:system/etc/init.d/90userinit
 endif
 
+# Backup Tool
+PRODUCT_COPY_FILES += \
+     vendor/aosp/prebuilts/bin/backuptool.sh:system/bin/backuptool.sh \
+     vendor/aosp/prebuilts/bin/backuptool.functions:system/bin/backuptool.functions \
+     vendor/aosp/prebuilts/bin/blacklist:system/addon.d/blacklist \
+     vendor/aosp/prebuilts/bin/whitelist:system/addon.d/whitelist
+
+
+
 # Copy all specific init rc files
 #$(foreach f,$(wildcard vendor/aost/prebuilts/etc/init/*.rc),\
 #	$(eval PRODUCT_COPY_FILES += $(f):system/etc/init/$(notdir $f)))
