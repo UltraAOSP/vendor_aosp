@@ -47,10 +47,10 @@ endif
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-     vendor/aosp/prebuilts/bin/backuptool.sh:system/bin/backuptool.sh \
-     vendor/aosp/prebuilts/bin/backuptool.functions:system/bin/backuptool.functions \
-     vendor/aosp/prebuilts/bin/blacklist:system/addon.d/blacklist \
-     vendor/aosp/prebuilts/bin/whitelist:system/addon.d/whitelist
+     vendor/aost/prebuilts/bin/backuptool.sh:system/bin/backuptool.sh \
+     vendor/aost/prebuilts/bin/backuptool.functions:system/bin/backuptool.functions \
+     vendor/aost/prebuilts/bin/blacklist:system/addon.d/blacklist \
+     vendor/aost/prebuilts/bin/whitelist:system/addon.d/whitelist
 
 
 
