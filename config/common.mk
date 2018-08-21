@@ -52,12 +52,6 @@ PRODUCT_COPY_FILES += \
      vendor/aost/prebuilts/bin/blacklist:system/addon.d/blacklist \
      vendor/aost/prebuilts/bin/whitelist:system/addon.d/whitelist
 
-
-
-# Copy all specific init rc files
-#$(foreach f,$(wildcard vendor/aost/prebuilts/etc/init/*.rc),\
-#	$(eval PRODUCT_COPY_FILES += $(f):system/etc/init/$(notdir $f)))
-
 # Extra tools
 PRODUCT_PACKAGES += \
     7z \
@@ -125,8 +119,6 @@ endif
 
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
-    SoundPickerPrebuilt \
-    TimeZo \
     MarkupGoogle
 
 # Bootanimation
