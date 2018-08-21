@@ -101,7 +101,13 @@ PRODUCT_PACKAGES += \
 # LatinIME
 PRODUCT_PACKAGES += \
     LatinIME \
-    Phonograph
+    Phonograph \
+    messaging \
+    SoundRecorder \
+    Stk \
+    WallpaperPicker \
+    Gallery2 \
+    LivePicker
 
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
