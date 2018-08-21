@@ -100,7 +100,8 @@ PRODUCT_PACKAGES += \
 
 # LatinIME
 PRODUCT_PACKAGES += \
-    LatinIME
+    LatinIME \
+    Phonograph
 
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
