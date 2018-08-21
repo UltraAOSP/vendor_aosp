@@ -102,7 +102,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     rsync
 
-# LatinIME
+# UAOST Custom packages
 PRODUCT_PACKAGES += \
     LatinIME \
     Phonograph \
