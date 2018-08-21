@@ -107,7 +107,8 @@ PRODUCT_PACKAGES += \
     Stk \
     WallpaperPicker \
     Gallery2 \
-    LivePicker
+    LivePicker \
+    TimeZoneUpdater
 
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
