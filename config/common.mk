@@ -52,6 +52,10 @@ PRODUCT_COPY_FILES += \
      vendor/aost/prebuilts/bin/blacklist:system/addon.d/blacklist \
      vendor/aost/prebuilts/bin/whitelist:system/addon.d/whitelist
 
+# Apns
+PRODUCT_COPY_FILES += \
+    vendor/aost/prebuilts/etc/apns-conf.xml:system/etc/apns-conf.xml
+
 # Extra tools
 PRODUCT_PACKAGES += \
     7z \
