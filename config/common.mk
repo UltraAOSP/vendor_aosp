@@ -129,10 +129,6 @@ PRODUCT_PACKAGES += \
     procrank
 endif
 
-# Prebuilt Packages
-PRODUCT_PACKAGES += \
-    MarkupGoogle
-
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),720)
      PRODUCT_COPY_FILES += vendor/aost/prebuilts/media/bootanimation_720.zip:system/media/bootanimation.zip
