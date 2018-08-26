@@ -133,17 +133,6 @@ endif
 PRODUCT_PACKAGES += \
     MarkupGoogle
 
-# Bootanimation
-ifeq ($(TARGET_BOOT_ANIMATION_RES),720)
-     PRODUCT_COPY_FILES += vendor/aost/prebuilts/media/bootanimation_720.zip:system/media/bootanimation.zip
-else ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
-     PRODUCT_COPY_FILES += vendor/aost/prebuilts/media/bootanimation_1080.zip:system/media/bootanimation.zip
-else ifeq ($(TARGET_BOOT_ANIMATION_RES),1440)
-     PRODUCT_COPY_FILES += vendor/aost/prebuilts/media/bootanimation_1440.zip:system/media/bootanimation.zip
-else
-    $(error " TARGET_BOOT_ANIMATION_RES is undefined")
-endif
-
 # Fonts
 PRODUCT_COPY_FILES += \
     vendor/aost/prebuilts/fonts/GoogleSans-Regular.ttf:system/fonts/GoogleSans-Regular.ttf \
