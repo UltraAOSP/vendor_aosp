@@ -151,6 +151,18 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += \
     vendor/aost/overlay/common/
 
+# Compile Accents Overlay
+PRODUCT_PACKAGES += \
+    YellowTheme \
+    DeepPurpleTheme \
+    Stock\
+    PurpleTheme \
+    RedTheme \
+    PixelTheme \
+    SkyBlueTheme \
+    IndigoTheme \
+    PinkTheme
+
 
 PRODUCT_VERSION_MAJOR = 1
 PRODUCT_VERSION_MINOR = 0
