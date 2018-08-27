@@ -148,10 +148,8 @@ PRODUCT_COPY_FILES += \
     vendor/aost/prebuilts/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
 
 # Include package overlays
-BOARD_ENFORCE_RRO := true
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aost/overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    vendor/aost/overlay/
+    vendor/aost/overlay/common/
 
 # Compile Accents Overlay
 PRODUCT_PACKAGES += \
