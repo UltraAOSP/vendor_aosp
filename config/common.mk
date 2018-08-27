@@ -151,6 +151,8 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += \
     vendor/aost/overlay/common/
 
+
+BUILD_RRO_SYSTEM_PACKAGE := $(TOP)/vendor/aost/build/core/system_rro.mk
 # Compile Accents Overlay
 PRODUCT_PACKAGES += \
     YellowTheme \
