@@ -16,7 +16,7 @@
 # -----------------------------------------------------------------
 # AOST OTA update package
 
-AOST_TARGET_PACKAGE := $(PRODUCT_OUT)/UltraAOST-$(AOST_VERSION).zip
+AOST_TARGET_PACKAGE := $(PRODUCT_OUT)/UltraAOST-$(AOST_BUILD)-$(AOST_VERSION).zip
 
 .PHONY: bacon
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
