@@ -105,6 +105,7 @@ PRODUCT_PACKAGES += \
     SoundRecorder \
     Stk \
     WallpaperPicker \
+    LiveWallpapersPicker \
     Gallery2 \
     LivePicker \
     TimeZoneUpdater
