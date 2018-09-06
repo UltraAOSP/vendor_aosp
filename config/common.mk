@@ -101,6 +101,7 @@ PRODUCT_PACKAGES += \
     LatinIME \
     Phonograph \
     messaging \
+    Jelly \
     SoundRecorder \
     Stk \
     WallpaperPicker \
