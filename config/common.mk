@@ -1,4 +1,5 @@
 PRODUCT_BRAND ?= UltraAOST
+AOST_BUILD_DATE := $(shell date -u +%Y%m%d-%H%M)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -250,3 +251,8 @@ else
 endif
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
+
+PRODUCT_PROPERTY_OVERRIDES += \
+  org.aost.version=$(AOST_VERSION) \
+  org.aost.build_type=$(AOST_BUILDTYPE) \
+  org.aost.build_date=$(AOST_BUILD_DATE)
