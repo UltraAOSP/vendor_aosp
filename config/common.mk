@@ -154,20 +154,10 @@ endif
 DEVICE_PACKAGE_OVERLAYS += \
     vendor/aost/overlay/common/
 
-
 BUILD_RRO_SYSTEM_PACKAGE := $(TOP)/vendor/aost/build/core/system_rro.mk
-# Compile Accents Overlay
-PRODUCT_PACKAGES += \
-    YellowTheme \
-    DeepPurpleTheme \
-    Stock\
-    PurpleTheme \
-    RedTheme \
-    PixelTheme \
-    SkyBlueTheme \
-    IndigoTheme \
-    PinkTheme
 
+#Themes and Accent colors
+include vendor/aost/themes/config.mk
 
 PRODUCT_VERSION_MAJOR = 1
 PRODUCT_VERSION_MINOR = 0
