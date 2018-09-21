@@ -3,7 +3,9 @@ PRODUCT_PACKAGES += \
     DarkThemeAndroidOverlay \
     DarkThemeSettingsOverlay \
     BlackThemeAndroidOverlay \
-    BlackThemeSettingsOverlay
+    BlackThemeBlackNotifAndroidOverlay \
+    BlackThemeSettingsOverlay \
+    BlackThemeBlackNotifSettingsOverlay
 
 # Accents colors
 PRODUCT_PACKAGES += \
